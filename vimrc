@@ -13,3 +13,5 @@ autocmd FileType make           setlocal nu noet
 autocmd FileType python         setlocal nu
 autocmd FileType ruby           setlocal nu
 autocmd FileType sh             setlocal nu
+autocmd FileType json           setlocal nu
+autocmd FileType yaml           setlocal nu sw=2 nosi noci
