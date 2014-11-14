@@ -1,4 +1,5 @@
-execute pathogen#infect()
+"execute pathogen#infect()
+call pathogen#infect()
 syntax on
 filetype plugin indent on       " enable use of .vim/afger/ftplugin/TYPE.vim files
 set ai
@@ -7,6 +8,7 @@ set et
 set vb
 autocmd FileType c              setlocal nu
 autocmd FileType go             setlocal nu ts=4 noet
+let g:go_fmt_command = "goimports"
 autocmd FileType java           setlocal nu
 autocmd FileType javascript     setlocal nu
 autocmd FileType make           setlocal nu noet
