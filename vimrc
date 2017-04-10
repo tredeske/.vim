@@ -6,14 +6,9 @@ set ai
 set sw=4
 set et
 set vb
-autocmd FileType c              setlocal nu
-autocmd FileType go             setlocal nu ts=4 noet
+set nu
+autocmd FileType go             setlocal ts=4 noet
 let g:go_fmt_command = "goimports"
-autocmd FileType java           setlocal nu
-autocmd FileType javascript     setlocal nu
-autocmd FileType make           setlocal nu noet
-autocmd FileType python         setlocal nu
-autocmd FileType ruby           setlocal nu
-autocmd FileType sh             setlocal nu
-autocmd FileType json           setlocal nu
-autocmd FileType yaml           setlocal nu sw=2 nosi noci
+autocmd FileType make           setlocal noet
+autocmd FileType yaml           setlocal sw=2 nosi noci
+:hi Comment ctermfg=blue
