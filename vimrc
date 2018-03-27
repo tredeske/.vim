@@ -11,3 +11,4 @@ autocmd FileType go             setlocal ts=4 noet
 let g:go_fmt_command = "goimports"
 autocmd FileType make           setlocal noet
 autocmd FileType yaml           setlocal sw=2 nosi noci
+:hi Comment ctermfg=blue
