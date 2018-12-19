@@ -1,0 +1,23 @@
+[user]
+        name = tomr
+        email = nobody@invalid
+[alias]
+        co = checkout
+        ci = commit
+        st = status
+        br = branch
+        hist = log --pretty=format:'%h %ad | %s %d [%an]' --graph --date=short  
+        type = cat-file -t
+        dump = cat-file -p
+
+#[credential "https://gitlab.lab24.com"]
+#        username = lab24_63
+[push]
+	default = simple
+[core]
+	quotepath = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
