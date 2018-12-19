@@ -1,5 +1,6 @@
 set columns=88 lines=60
 colorscheme darkblue
+"colorscheme torte
 set guioptions-=m       "rm menu bar
 set guioptions-=T       "rm tool bar
 set guioptions-=r       "rm right hand scroll bar
