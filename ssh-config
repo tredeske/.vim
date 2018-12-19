@@ -1,0 +1,45 @@
+#
+# General defaults are at end of file
+#
+
+
+#
+# 
+#
+Host SOME-HOST
+        ForwardX11      yes
+        ForwardAgent    yes
+        HostName        10.0.93.168
+
+#
+# example of using proxy jump.  ssh to HOST, but jump through PROXY
+#
+Host HOST
+        User            USER
+        ProxyJump       PROXY1,PROXY2
+
+
+
+#
+# ----------------------------------------------
+# General defaults.
+#
+# Must be at end since 1st obtained value is used.
+# ----------------------------------------------
+#
+Host *                  # apply all of these opts to all hosts
+IdentityFile            ~/.ssh/id_ed25519
+CheckHostIP             no
+ForwardAgent            no
+ForwardX11              yes
+GSSAPIAuthentication    no
+GSSAPIKeyExchange       no
+HostbasedAuthentication no
+NoHostAuthenticationForLocalhost yes
+PubkeyAuthentication    yes
+PreferredAuthentications publickey,keyboard-interactive,password
+Protocol                2
+#ServerAliveInterval     37
+#ServerAliveCountMax     3
+#TCPKeepAlive            yes
+StrictHostKeyChecking   no
