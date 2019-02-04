@@ -17,6 +17,10 @@ autocmd FileType go             setlocal ts=4 noet
 let g:go_fmt_command = "goimports"
 autocmd FileType make           setlocal noet
 autocmd FileType yaml           setlocal sw=2 nosi noci
+autocmd FileType javascript     setlocal sw=2
+autocmd FileType html           setlocal sw=2
+autocmd FileType css            setlocal sw=2
+autocmd FileType vue            setlocal sw=2
 " autocmd FileType java           setlocal nu
 " autocmd FileType javascript     setlocal nu
 " autocmd FileType make           setlocal nu noet
